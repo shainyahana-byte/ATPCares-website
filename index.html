@@ -37,7 +37,7 @@
 
   [contenteditable="true"] { outline: none; border-radius: 6px; transition: all .2s ease; cursor: text; }
 
-  .edit-mode [contenteditable="true"] {
+  /*.edit-mode [contenteditable="true"] {
     outline: 2px dashed #C84B31;
     outline-offset: 4px;
     background-color: rgba(200,75,49,0.06);
@@ -46,7 +46,7 @@
   .edit-mode [contenteditable="true"]:focus {
     outline: 2px solid #C84B31;
     background-color: rgba(200,75,49,0.1);
-  }
+  } */
 
   .scroll-fade { animation: fadeUp .7s ease both; }
   @keyframes fadeUp { from { opacity:0; transform: translateY(16px);} to { opacity:1; transform: translateY(0);} }
@@ -160,11 +160,11 @@
         <i data-lucide="smartphone" class="w-3.5 h-3.5"></i> Flutter · Android Studio · Supabase
       </span>
 
-      <h2 contenteditable="true" class="font-display font-extrabold text-4xl sm:text-5xl lg:text-[3.4rem] text-charcoal leading-[1.1]">
+      <h2 class="font-display font-extrabold text-4xl sm:text-5xl lg:text-[3.4rem] text-charcoal leading-[1.1]">
         Introducing <span class="text-terracotta">ATPCares</span>
       </h2>
 
-      <p contenteditable="true" class="mt-6 text-base sm:text-lg text-charcoal/60 leading-relaxed max-w-xl mx-auto lg:mx-0">
+      <p class="mt-6 text-base sm:text-lg text-charcoal/60 leading-relaxed max-w-xl mx-auto lg:mx-0">
         A Flutter-based community platform designed to bridge the gap between verified local orphanages, volunteer mentors, and donors in Anantapur — built as an academic exploration in mobile app design, social impact, and real-world backend integration.
       </p>
 
@@ -213,10 +213,10 @@
   <div class="bg-white rounded-3xl shadow-card border border-black/5 px-6 sm:px-10 py-10 sm:py-12 flex flex-col items-center text-center gap-5">
 
     <span class="text-terracotta text-xs font-bold tracking-wider uppercase">Get the App</span>
-    <h3 contenteditable="true" class="font-display font-bold text-2xl sm:text-3xl text-charcoal">
+    <h3 class="font-display font-bold text-2xl sm:text-3xl text-charcoal">
       Where can you find ATPCares?
     </h3>
-    <p contenteditable="true" class="text-charcoal/55 text-sm sm:text-base max-w-lg leading-relaxed">
+    <p class="text-charcoal/55 text-sm sm:text-base max-w-lg leading-relaxed">
       Tap the logo below to open the app, repo, or build link for ATPCares.
     </p> 
 
@@ -231,7 +231,7 @@
 
      Editable URL shown beneath the logo 
     <p class="text-xs text-charcoal/40 mt-1">App / repository link:</p>
-    <p id="appLinkUrl" contenteditable="true" spellcheck="false"
+    <p id="appLinkUrl" spellcheck="false"
        class="text-sm font-semibold text-terracotta hover:text-terracotta-dark max-w-full break-all px-3 py-1.5 rounded-lg">
       https://github.com/
     </p>
@@ -247,10 +247,10 @@
     <!-- Header -->
     <div class="text-center mb-10">
       <span class="text-terracotta text-xs font-bold tracking-wider uppercase">Where to Find Us</span>
-      <h3 contenteditable="true" class="font-display font-bold text-2xl sm:text-3xl text-charcoal mt-3">
+      <h3 class="font-display font-bold text-2xl sm:text-3xl text-charcoal mt-3">
         ATPCares is Coming Soon
       </h3>
-      <p contenteditable="true" class="text-charcoal/55 text-sm sm:text-base max-w-lg mx-auto mt-3 leading-relaxed">
+      <p class="text-charcoal/55 text-sm sm:text-base max-w-lg mx-auto mt-3 leading-relaxed">
         ATPCares is currently in active development at JNTU Anantapuram. Follow our progress on GitHub and be the first to know when it launches.
       </p>
     </div>
@@ -321,10 +321,10 @@
 <section id="about" class="max-w-7xl mx-auto px-5 sm:px-8 py-16 sm:py-20">
   <div class="text-center max-w-2xl mx-auto mb-14">
     <span class="text-terracotta text-xs font-bold tracking-wider uppercase">About the App</span>
-    <h3 contenteditable="true" class="font-display font-bold text-2xl sm:text-3xl text-charcoal mt-3">
+    <h3 class="font-display font-bold text-2xl sm:text-3xl text-charcoal mt-3">
       Built around three core pillars
     </h3>
-    <p contenteditable="true" class="text-charcoal/55 mt-3 text-sm sm:text-base leading-relaxed">
+    <p class="text-charcoal/55 mt-3 text-sm sm:text-base leading-relaxed">
       Every feature in ATPCares was designed with one goal: making it simple and transparent to support children's homes in Anantapur.
     </p>
   </div>
@@ -337,7 +337,7 @@
         <i data-lucide="badge-check" class="w-6 h-6 text-terracotta"></i>
       </div>
       <h4 class="font-display font-bold text-lg text-charcoal">Verified Directory</h4>
-      <p contenteditable="true" class="text-sm text-charcoal/55 mt-2.5 leading-relaxed">
+      <p class="text-sm text-charcoal/55 mt-2.5 leading-relaxed">
         Aggregating local orphanages and homes in one place, transparently listing their urgent real-time needs so donors know exactly where help is required.
       </p>
     </div>
@@ -348,7 +348,7 @@
         <i data-lucide="graduation-cap" class="w-6 h-6 text-forest"></i>
       </div>
       <h4 class="font-display font-bold text-lg text-charcoal">Mentorship Hub</h4>
-      <p contenteditable="true" class="text-sm text-charcoal/55 mt-2.5 leading-relaxed">
+      <p class="text-sm text-charcoal/55 mt-2.5 leading-relaxed">
         Allowing volunteers to discover open tutoring and skill-sharing slots, connecting their time and knowledge directly with children who need guidance.
       </p>
     </div>
@@ -359,7 +359,7 @@
         <i data-lucide="cpu" class="w-6 h-6 text-terracotta"></i>
       </div>
       <h4 class="font-display font-bold text-lg text-charcoal">Tech Stack</h4>
-      <p contenteditable="true" class="text-sm text-charcoal/55 mt-2.5 leading-relaxed">
+      <p class="text-sm text-charcoal/55 mt-2.5 leading-relaxed">
         Built with Flutter for smooth cross-platform performance on both Android and iOS, powered by a robust Supabase backend for real-time data and authentication.
       </p>
     </div>
@@ -400,10 +400,10 @@
 <section id="team" class="max-w-7xl mx-auto px-5 sm:px-8 py-16 sm:py-20">
   <div class="text-center max-w-2xl mx-auto mb-14">
     <span class="text-terracotta text-xs font-bold tracking-wider uppercase">Project Development</span>
-    <h3 contenteditable="true" class="font-display font-bold text-2xl sm:text-3xl text-charcoal mt-3">
+    <h3 class="font-display font-bold text-2xl sm:text-3xl text-charcoal mt-3">
       Crafted by Three CSE Students
     </h3>
-    <p contenteditable="true" class="text-charcoal/55 mt-3 text-sm sm:text-base leading-relaxed">
+    <p class="text-charcoal/55 mt-3 text-sm sm:text-base leading-relaxed">
       ATPCares is an academic project conceived, designed, and developed at JNTU Anantapuram, combining mobile engineering with a genuine intent for community impact.
     </p>
   </div>
@@ -501,20 +501,20 @@
       An academic Flutter project showcase, built at JNTU Anantapuram under the Department of CSE.
     </p>
 
-    <button id="editModeToggle"
+    <!-- <button id="editModeToggle"
       class="inline-flex items-center gap-2 bg-terracotta/10 hover:bg-terracotta/20 border border-terracotta/30 text-terracotta font-semibold text-sm px-5 py-2.5 rounded-full transition-colors">
       <i data-lucide="pencil-line" class="w-4 h-4"></i>
       <span id="editModeLabel">Toggle Edit Mode</span>
-    </button>
+    </button> -->
 
     <p class="text-xs text-charcoal/30 mt-1">© 2026 ATPCares Project · JNTU Anantapuram</p>
   </div>
 </footer>
 
-<!-- ============ EDIT MODE BANNER ============ -->
+<!-- ============ EDIT MODE BANNER ============ 
 <div id="editBanner" class="fixed bottom-0 left-0 right-0 bg-terracotta text-white text-sm font-semibold text-center py-2.5 z-50 hidden">
   ✏️ Edit Mode is ON — click any dashed-outline text to edit it directly.
-</div>
+</div> -->
 
 <script>
   lucide.createIcons();
@@ -549,16 +549,16 @@
   });
 
   const body = document.body;
-  const toggleBtn = document.getElementById('editModeToggle');
-  const editBanner = document.getElementById('editBanner');
-  const editLabel = document.getElementById('editModeLabel');
+  //const toggleBtn = document.getElementById('editModeToggle');
+  //const editBanner = document.getElementById('editBanner');
+  //const editLabel = document.getElementById('editModeLabel');
 
-  toggleBtn.addEventListener('click', () => {
+  /*toggleBtn.addEventListener('click', () => {
     body.classList.toggle('edit-mode');
     const isOn = body.classList.contains('edit-mode');
     editBanner.classList.toggle('hidden', !isOn);
     editLabel.textContent = isOn ? 'Exit Edit Mode' : 'Toggle Edit Mode';
-  });
+  }); */
 
   document.querySelectorAll('a[href^="#"]').forEach(link => {
     link.addEventListener('click', (e) => {
