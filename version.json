@@ -1,0 +1,8 @@
+{
+  "version": "1.0.0",
+  "build_number": 1,
+  "apk_url": "https://atpcares.co.in/downloads/ATPCares.apk",
+  "release_notes": "Initial release of ATPCares!",
+  "force_update": false,
+  "is_available": false
+}
