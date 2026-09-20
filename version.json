@@ -1,8 +1,8 @@
 {
-  "version": "1.0.2",
-  "build_number": 3,
-  "apk_url": "https://github.com/shainyahana-byte/ATPCares-website/releases/download/v1.0.2/app-release.apk",
-  "release_notes": "Updated release of ATPCares!",
+  "version": "1.0.3",
+  "build_number": 4,
+  "apk_url": "https://github.com/shainyahana-byte/ATPCares-website/releases/download/v1.0.2/ATPCares.apk",
+  "release_notes": "• In-app update simulation test\n• Verifying download & prompt flow",
   "force_update": false,
   "is_available": true
 }
