@@ -137,11 +137,14 @@
     </div>
 
     <nav class="hidden xl:flex items-center gap-6 text-sm font-semibold text-charcoal/70">
-      <a href="#download" class="hover:text-terracotta transition-colors">Download</a>
+      <a href="#download" class="hover:text-terracotta transition-colors">Overview</a>
       <a href="#features" class="hover:text-terracotta transition-colors">Features</a>
       <a href="#live-needs" class="hover:text-terracotta transition-colors">Live Needs</a>
       <a href="#meal-pulse" class="hover:text-terracotta transition-colors">Meal Pulse</a>
       <a href="#team" class="hover:text-terracotta transition-colors">The Team</a>
+      <a href="mailto:atpcares@gmail.com" class="hover:text-terracotta transition-colors flex items-center gap-1.5">
+        <i data-lucide="mail" class="w-4 h-4"></i> Contact Us
+      </a>
     </nav>
 
     <div class="flex items-center gap-3">
@@ -149,24 +152,32 @@
         <i data-lucide="graduation-cap" class="w-3.5 h-3.5"></i> Academic Project
       </span>
 
-      <a href="#download" class="hidden sm:inline-flex items-center gap-2 bg-terracotta hover:bg-terracotta-dark transition-colors text-white text-xs font-bold px-4 py-2 rounded-full">
+      <!-- Fixed Desktop Navbar Download Button with data-apk -->
+      <a data-apk href="javascript:void(0)" class="hidden sm:inline-flex items-center gap-2 bg-terracotta hover:bg-terracotta-dark transition-colors text-white text-xs font-bold px-4 py-2 rounded-full">
         <i data-lucide="download" class="w-3.5 h-3.5"></i> Download
       </a>
 
+      <!-- Three dots / Hamburger Toggle Button -->
       <button id="mobileMenuToggle" aria-label="Toggle navigation menu" aria-expanded="false"
         class="xl:hidden w-10 h-10 rounded-xl bg-white border border-black/5 shadow-soft flex items-center justify-center shrink-0">
-        <i data-lucide="menu" id="mobileMenuIcon" class="w-5 h-5 text-charcoal"></i>
+        <i data-lucide="more-vertical" id="mobileMenuIcon" class="w-5 h-5 text-charcoal"></i>
       </button>
     </div>
   </div>
 
+  <!-- Mobile Dropdown Navigation Menu -->
   <nav id="mobileNav" class="xl:hidden hidden flex-col gap-1 px-5 pb-4 text-sm font-semibold text-charcoal/70 border-t border-black/5 pt-3 bg-cream/95 backdrop-blur-md">
-    <a href="#download" class="block px-2 py-2.5 rounded-lg hover:bg-black/5 hover:text-terracotta transition-colors">Download</a>
-    <a href="#features" class="block px-2 py-2.5 rounded-lg hover:bg-black/5 hover:text-terracotta transition-colors">Features</a>
-    <a href="#live-needs" class="block px-2 py-2.5 rounded-lg hover:bg-black/5 hover:text-terracotta transition-colors">Live Needs</a>
-    <a href="#meal-pulse" class="block px-2 py-2.5 rounded-lg hover:bg-black/5 hover:text-terracotta transition-colors">Meal Pulse</a>
-    <a href="#team" class="block px-2 py-2.5 rounded-lg hover:bg-black/5 hover:text-terracotta transition-colors">The Team</a>
-    <a href="#download" class="mt-2 inline-flex items-center justify-center gap-2 bg-terracotta text-white px-4 py-2.5 rounded-xl font-bold">
+    <a href="#download" class="block px-2 py-2 rounded-lg hover:bg-black/5 hover:text-terracotta transition-colors">Overview</a>
+    <a href="#features" class="block px-2 py-2 rounded-lg hover:bg-black/5 hover:text-terracotta transition-colors">Features</a>
+    <a href="#live-needs" class="block px-2 py-2 rounded-lg hover:bg-black/5 hover:text-terracotta transition-colors">Live Needs</a>
+    <a href="#meal-pulse" class="block px-2 py-2 rounded-lg hover:bg-black/5 hover:text-terracotta transition-colors">Meal Pulse</a>
+    <a href="#team" class="block px-2 py-2 rounded-lg hover:bg-black/5 hover:text-terracotta transition-colors">The Team</a>
+    <!-- Contact Us Link in Three Dots Menu -->
+    <a href="mailto:atpcares@gmail.com" class="flex items-center gap-2 px-2 py-2 rounded-lg hover:bg-black/5 text-charcoal hover:text-terracotta transition-colors">
+      <i data-lucide="mail" class="w-4 h-4 text-terracotta"></i> Contact Us (atpcares@gmail.com)
+    </a>
+    <!-- Fixed Mobile Navbar Download Button with data-apk -->
+    <a data-apk href="javascript:void(0)" class="mt-2 inline-flex items-center justify-center gap-2 bg-terracotta text-white px-4 py-2.5 rounded-xl font-bold hover:bg-terracotta-dark transition-colors">
       <i data-lucide="download" class="w-4 h-4"></i> Download the app
     </a>
   </nav>
@@ -326,7 +337,7 @@
   </div>
 
   <!-- Contact Us Bar -->
-  <div class="mt-8 bg-white rounded-2xl border border-black/5 p-6 sm:p-7 flex flex-col sm:flex-row items-center justify-between gap-4 shadow-soft">
+  <div id="contact" class="mt-8 bg-white rounded-2xl border border-black/5 p-6 sm:p-7 flex flex-col sm:flex-row items-center justify-between gap-4 shadow-soft">
     <div>
       <h4 class="font-display font-bold text-lg text-charcoal">Have questions or want to partner?</h4>
       <p class="text-sm text-charcoal/55 mt-0.5">Reach out to the team directly for queries, feedback, or shelter verification.</p>
@@ -616,7 +627,7 @@
 <script>
   lucide.createIcons();
 
-  /* Mobile Nav */
+  /* Mobile Nav (Three Dots) */
   const mobileMenuToggle = document.getElementById('mobileMenuToggle');
   const mobileMenuIcon = document.getElementById('mobileMenuIcon');
   const mobileNav = document.getElementById('mobileNav');
@@ -625,7 +636,7 @@
     mobileNav.classList.toggle('hidden', !isOpen);
     mobileNav.classList.toggle('flex', isOpen);
     mobileMenuToggle.setAttribute('aria-expanded', String(isOpen));
-    mobileMenuIcon.setAttribute('data-lucide', isOpen ? 'x' : 'menu');
+    mobileMenuIcon.setAttribute('data-lucide', isOpen ? 'x' : 'more-vertical');
     lucide.createIcons();
   }
 
@@ -633,7 +644,7 @@
     setMobileNav(mobileNav.classList.contains('hidden'));
   });
 
-  mobileNav.querySelectorAll('a').forEach(link => {
+  mobileNav.querySelectorAll('a:not([data-apk])').forEach(link => {
     link.addEventListener('click', () => setMobileNav(false));
   });
 
@@ -641,7 +652,8 @@
     if (window.innerWidth >= 1280) setMobileNav(false);
   });
 
-  document.querySelectorAll('a[href^="#"]').forEach(link => {
+  /* Smooth scroll only for navigational anchor links (ignoring download actions) */
+  document.querySelectorAll('a[href^="#"]:not([data-apk])').forEach(link => {
     link.addEventListener('click', (e) => {
       const target = document.querySelector(link.getAttribute('href'));
       if (target) {
