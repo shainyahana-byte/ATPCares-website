@@ -1,7 +1,7 @@
 {
-  "version": "1.0.2",
-  "build_number": 3,
-  "apk_url": "https://github.com/shainyahana-byte/ATPCares-website/releases/download/v1.0.2/app-release.apk",
+  "version": "1.0.3",
+  "build_number": 4,
+  "apk_url": "https://github.com/shainyahana-byte/ATPCares-website/releases/download/v1.0.3/ATPCares.apk",
   "release_notes": "Official release build",
   "force_update": false,
   "is_available": true
